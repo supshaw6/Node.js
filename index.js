@@ -21,4 +21,25 @@
 // or load entire module as a function
 // const logger = require('./logger');
 
-logger('Hello Sophia! Great job!')
+// logger('Hello Sophia! Great job!') 
+
+//-------------------------
+// working with file paths using built-in modules
+// const path = require('path');
+
+// var pathObj = path.parse(__filename);
+
+// console.log(pathObj)
+
+// working with the OS module
+const os = require('os');
+
+var totalMemory = os.totalmem();
+var freeMemory = os.freemem();
+
+console.log('Total Memory: ' + totalMemory);
+console.log('Free Memory: ' + freeMemory);
+
+// pro-tip: using a template string (helps build strings without concatinations)
+console.log(`Total Memory: ${totalMemory}`);
+console.log(`Free Memory: ${freeMemory}`);
