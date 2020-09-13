@@ -37,9 +37,10 @@ const os = require('os');
 var totalMemory = os.totalmem();
 var freeMemory = os.freemem();
 
-console.log('Total Memory: ' + totalMemory);
-console.log('Free Memory: ' + freeMemory);
+// console.log('Total Memory: ' + totalMemory);
+// console.log('Free Memory: ' + freeMemory);
 
 // pro-tip: using a template string (helps build strings without concatinations)
 console.log(`Total Memory: ${totalMemory}`);
 console.log(`Free Memory: ${freeMemory}`);
+
