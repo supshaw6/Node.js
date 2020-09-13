@@ -32,15 +32,33 @@
 // console.log(pathObj)
 
 // working with the OS module
-const os = require('os');
+// const os = require('os');
 
-var totalMemory = os.totalmem();
-var freeMemory = os.freemem();
+// var totalMemory = os.totalmem();
+// var freeMemory = os.freemem();
 
 // console.log('Total Memory: ' + totalMemory);
 // console.log('Free Memory: ' + freeMemory);
 
 // pro-tip: using a template string (helps build strings without concatinations)
-console.log(`Total Memory: ${totalMemory}`);
-console.log(`Free Memory: ${freeMemory}`);
+// console.log(`Total Memory: ${totalMemory}`);
+// console.log(`Free Memory: ${freeMemory}`);
 
+// const EventEmitter = require('events');
+
+// load logger module and call log function
+// const Logger = require('./logger');
+// const logger = new Logger(); // new Logger object
+
+// Register a listener
+// logger.on('messageLogged', (arg) => {
+   //console.log('Listener called', arg);
+// });
+
+// logger.log('message');
+
+// -------- HTTP Module ---------------
+const http = require ('http');
+
+// store result in a server object, has all features of EventEmitter
+const server = http.createServer();
